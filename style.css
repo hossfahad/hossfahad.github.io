@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif:700|Thasadith');
 * {
-    --bg-sand: #1E1400;
+    --bg-sand: rgb(37, 0, 22);
     --highlight: #37CEAB;
+    --extra-highlight: rgb(102, 255, 219);
     --text-color: #F4F4F4;
+    --cnn: #cc0000;
+    --hover-cnn: #eb2727;
+    --msk: #1C73CA;
+    --hover-msk: rgb(54, 142, 231);
 }
 
 section{
@@ -18,7 +23,7 @@ body {
     max-width: 960px;
     margin: 0 auto;
     /* height: calc(100vh/2); */
-    margin-top: 10vh;
+    margin-top: 5vh;
 }
 
 .main-page {
@@ -51,9 +56,10 @@ body {
 
 .subhead-text {
     font-family: 'Thasadith', sans-serif;
-    font-size: 2em;
+    font-size: 1.8em;
     color: var(--text-color); 
     letter-spacing: -1px;
+    cursor: default;
 }
 
 .nav {
@@ -63,9 +69,29 @@ body {
     width: 100%;
 }
 
-#name {
-    color: var(--highlight);
+#msk {
+    color: var(--msk);
+    text-decoration: none;
 }
+#msk:hover {
+    color: var(--hover-msk);
+    transition: color .3s ease-in;
+}
+#cnn {
+    color: var(--cnn);
+    text-decoration: none;
+}
+#cnn:hover {
+    color: var(--hover-cnn);
+    transition: color .3s ease-in;
+}
+.availability {
+    font-family: 'Thasadith',
+    sans-serif;
+    font-size: 1.3em;
+    color: var(--text-color);
+}
+
 
 .nav-list {
     list-style: none;
@@ -82,7 +108,7 @@ body {
     font-size: 2.5em;
     text-decoration: none;
     justify-content: space-evenly;
-
+    padding-bottom: 1em;
 }
 
 a {
@@ -120,7 +146,7 @@ a:hover {
 
     /* For mobile phones: */
     body {
-        margin-top: 4vh;
+        margin-top: 2.5vh;
     }
     a {
         color: var(--highlight);
@@ -138,7 +164,11 @@ a:hover {
         margin-top: 0;
     }
     .subhead-text {
-        font-size: 2em;
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .availability {
+        font-size: 1em;
         text-align: center;
     }
     .nav-list {
