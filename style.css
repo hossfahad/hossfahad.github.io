@@ -89,6 +89,7 @@ a {
     flex: 1;
     text-decoration: none;
     color: var(--text-color);
+    cursor: default;    
 }
 
 a:hover {
