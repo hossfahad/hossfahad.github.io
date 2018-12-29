@@ -131,17 +131,15 @@ a:hover {
         font-size: 1.3em;
     }
     .nav-list {
-        flex-direction: row;
+        display: flex;
         padding-left: 0;
-
     }
 
     .nav-list li {
-        flex: 1 0 auto;
-        flex-direction: column;
+        flex: 1;
         font-size: 1.2em;
-        text-decoration: none;
-        justify-content: space-around;
-
+    }
+    .nav-list li:first-child {
+        display: none;
     }
 }
