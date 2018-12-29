@@ -118,26 +118,34 @@ a:hover {
 @media only screen and (max-width: 768px) {
 
     /* For mobile phones: */
+    body {
+        margin-top: 4vh;
+    }
+    a {
+        color: var(--highlight);
+    }
     .section {
         letter-spacing: 0;
+        margin: 0 auto;
+        text-align: center;
     }
     .main-page {
         margin: 0 auto;
+        text-align: center;
     }
     .head-text {
         margin-top: 0;
     }
     .subhead-text {
-        font-size: 1.3em;
+        font-size: 2em;
+        text-align: center;
     }
     .nav-list {
-        display: flex;
-        padding-left: 0;
+        padding-top: 20px;
+        text-align: center;
     }
-
     .nav-list li {
-        flex: 1;
-        font-size: 1.2em;
+        font-size: 1.7em;
     }
     .nav-list li:first-child {
         display: none;
