@@ -37,7 +37,7 @@ body {
 
 .head-text {
     color: var(--text-color);
-    font-size: 3em;
+    font-size: 2em;
     font-family: 'Thasadith', sans-serif;
     box-sizing: border-box;
     margin-bottom: 0;
@@ -48,7 +48,7 @@ body {
     margin-top: -25px;
     padding: 0 0 30px 0;
     color: var(--highlight);
-    font-size: 7em;
+    font-size: 5.5em;
     font-family: 'Noto Serif',
     serif;
     letter-spacing: -1px;
@@ -56,7 +56,7 @@ body {
 
 .subhead-text {
     font-family: 'Thasadith', sans-serif;
-    font-size: 1.8em;
+    font-size: 1.4em;
     color: var(--text-color); 
     letter-spacing: -1px;
     cursor: default;
@@ -105,7 +105,7 @@ body {
 .nav-list li {
     flex: 1 0 auto;
     flex-direction: row;
-    font-size: 2.5em;
+    font-size: 2em;
     text-decoration: none;
     justify-content: space-evenly;
     padding-bottom: 1em;
@@ -152,9 +152,11 @@ a:hover {
         color: var(--highlight);
     }
     .section {
-        letter-spacing: 0;
         margin: 0 auto;
         text-align: center;
+    }
+    .major {
+        font-size: 3em;
     }
     .main-page {
         margin: 0 auto;
@@ -164,19 +166,22 @@ a:hover {
         margin-top: 0;
     }
     .subhead-text {
-        font-size: 1.5em;
-        text-align: center;
+        font-size: 1.2em;
+        text-align: left;
+        padding: 0px 10px 10px 10px;
     }
     .availability {
         font-size: 1em;
-        text-align: center;
+        text-align: left;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .nav-list {
-        padding-top: 20px;
+        padding-top: 10px;
         text-align: center;
     }
     .nav-list li {
-        font-size: 1.7em;
+        font-size: 1.3em;
     }
     .nav-list li:first-child {
         display: none;
