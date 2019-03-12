@@ -69,6 +69,17 @@ body {
     width: 100%;
 }
 
+#northwell {
+    font-weight: bold;
+    color: #009adf;
+    text-decoration: none;
+}
+
+#northwell:hover {
+    color: var(--highlight);
+    transition: color .3s ease-in;
+}
+
 #vfa {
     font-weight: bold;
     color: white;
@@ -84,7 +95,7 @@ body {
     color: var(--msk);
 }
 #msk:hover {
-    color: var(--hover-msk);
+    color: var(--highlight);
     transition: color .3s ease-in;
 }
 #cnn {
@@ -92,7 +103,7 @@ body {
     color: var(--cnn);
 }
 #cnn:hover {
-    color: var(--hover-cnn);
+    color: var(--highlight);
     transition: color .3s ease-in;
 }
 .availability {
