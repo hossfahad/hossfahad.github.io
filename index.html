@@ -6,24 +6,76 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <title>Fahad Hossain - Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Fahad Hossain's Product Manager Portfolio</title>
 </head>
 <body>
-    <section class="main-page animated fadeIn">
-        <p class="head-text">Hi, my name's</p>
-        <a href="/"><span class="major">Fahad.</span></a>
+    <section class="hero-section animated fadeIn">
+        <div class="profile-container">
+            <div class="profile-photo-wrapper">
+                <img src="https://media.licdn.com/dms/image/v2/D4E03AQGTcLISR4oEMQ/profile-displayphoto-shrink_800_800/B4EZQn9FxHGwAc-/0/1735837114248?e=1744243200&v=beta&t=V18o1bhClBOGoaitG7DoTvEJJjlHzgQ7r3zt8hPsYf8" alt="Fahad Hossain" class="profile-photo" />
+            </div>
+        </div>
+        <div class="hero-content">
+            <p class="head-text">Hello, I'm</p>
+            <a href="/"><span class="major">Fahad.</span></a>
+        </div>
     </section>
+    
     <p class="subhead-text animated fadeIn delay-1s">
-        I'm a Product Manager with a demonstrated history of delivering value across various industries, from healthcare to finance. Previous software experience in front-end development.</p>
+        Strategic Product Manager specializing in 0-1 product building and achieving Product-Market Fit. Expert in API development, marketplace platforms, and AI solutions, with a focus on fintech and enterprise software. I transform complex business challenges into scalable, user-centric products in regulated environments. Beyond tech, I'm an amateur food critic, I follow a PPL split at the gym, and travel counties in search of exceptional coffee.
     </p>
+
+    <div class="experience-section animated fadeIn delay-1s">
+        <h2>Where I've Made Impact</h2>
+        
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="company-card">
+                        <h3>CAIS</h3>
+                        <p class="role">Product Management, Pre-Trade, API and Marketplace</p>
+                        <p>Leading product strategy and execution for CAIS's alternative investment platform, democratizing access to private markets for financial advisors.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="company-card">
+                        <h3>S&P Global Ratings</h3>
+                        <p class="role">Product Management, Ratings Data Products</p>
+                        <p>Led the development of data-as-a-service solutions, enabling financial institutions to leverage S&P's vast credit ratings data ecosystem.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="company-card">
+                        <h3>Northwell Health</h3>
+                        <p class="role">Product Management, Emerging Technologies</p>
+                        <p>Developed digital health solutions to enhance patient care and streamline clinical workflows across New York's largest healthcare network.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="company-card">
+                        <h3>CNN</h3>
+                        <p class="role">Front-End Engineering Intern</p>
+                        <p>Contributed to CNN's digital platforms, enhancing news delivery and user engagement through front-end development.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="company-card">
+                        <h3>Memorial Sloan Kettering</h3>
+                        <p class="role">Software Engineering Intern</p>
+                        <p>Built healthcare applications supporting cancer research and patient care at one of the world's premier cancer centers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
     <p class="subhead-text animated fadeIn delay-1s">
-        Currently a Product lead at <a href="https://caisgroup.com">CAIS</a>, building the Alternative investments channel to bring the private markets closer to advisors.
-    </p>
-    <p class="subhead-text animated fadeIn delay-1s">
-       Previous Product Manager at <a href="https://spglobal.com/ratings">S&P Global Ratings</a>, in the Data-as-a-Service product group. Before that, I held a bunch of Internship positions across Engineering and Product.
-    </p>
-    <p class="subhead-text animated fadeIn delay-1s">
-        Happy to discuss: Web 3.0, DeFi, Product Strategy, Startups, and Mentorship opportunities.
+        Happy to discuss: Product Leadership, AI, API Products, Mentorship Opportunities, Food, and Formula 1.
     </p>
 
     <section class="nav animated fadeIn delay-2s">
@@ -31,11 +83,38 @@
             <ul class="nav-list">
                 <li><a href="https://medium.com/@fahadhossain94">Medium</a></li>
                 <li><a href="https://linkedin.com/in/hossfahad" target="_blank">LinkedIn</a></li>
-                <li><a href="src\fhoss-2023-resume.pdf" target="_blank">Resume</a></li>
+                <li><a href="src/Fahad Hossain - API Resume.pdf" target="_blank">Resume</a></li>
                 <li><a href="https://fahadhossa.in/blog">Blog</a></li>
                 <li><a href="mailto:hoss.fahad@gmail.com">Contact</a></li>
             </ul>
         </nav>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
 </body>
 </html>
